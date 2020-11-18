@@ -1,0 +1,101 @@
+IMPORT Processing
+
+Create an instances of conections to serials ports 
+for the PWM output to the heater and motor
+Create instances of connections to the peristaltic pumps
+
+void setup() { //same as arduino program
+
+	window size =  300 x 450   //window size, (width, height)
+
+  	connect heater port to correct pin
+  	connect mottor port to correct pin
+  	connect pH output to correct pin
+
+  	choose a font
+  
+  	// title
+    add text: "Bioreactor Control System" 
+  		bold
+  		title
+  		center
+
+  	// pH
+  	add text: "Current pH"
+  		left
+
+  	add label: get pH value from Arduino system
+  		right 
+
+  	add text: "Set pH"
+  		left
+
+  	add label: get pH value from slider
+  		right 
+
+  	add text: 3
+  		small
+  		bold
+  		left
+
+  	add slider
+  		center
+
+  	add text: 7
+  		small
+  		bold
+  		right
+
+  	// Stirrer RPM
+  	add text: "Current Stirrer RPM"
+  		left
+
+  	add label: get RPM value from Arduino system
+  		right 
+
+  	add text: "Set Stirrer RPM"
+  		left
+
+  	add label: get RPM value from slider
+  		right 
+
+  	add text: 500
+  		small
+  		bold
+  		left
+
+  	add slider
+  		center
+
+  	add text: 1000
+  		small
+  		bold
+  		right
+
+
+  	// Temperature
+  	add text: "Current Tempurature (°C)"
+  		left
+
+  	add label: get tempurature value from Arduino system
+  		right 
+
+  	add text: "Set Tempurature (°C)"
+  		left
+
+  	add label: get tempurature value from slider
+  		right 
+
+  	add text: 25
+  		small
+  		bold
+  		left
+
+  	add slider
+  		center
+
+  	add text: 35
+  		small
+  		bold
+  		right	
+}
