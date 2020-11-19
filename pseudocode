@@ -15,7 +15,7 @@ void setup() { //same as arduino program
   	choose a font
   
   	// title
-    add text: "Bioreactor Control System" 
+    	add text: "Bioreactor Control System" 
   		bold
   		title
   		center
